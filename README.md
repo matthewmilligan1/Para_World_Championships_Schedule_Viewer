@@ -1,2 +1,2 @@
-# Para_World_Championships_Schedule_Viewer
-Schedule viewer for GBR @ the World Para Swimming Championships 2023
+# Schedule_Viewer_Testing
+A testing space for the os schedule viewer
