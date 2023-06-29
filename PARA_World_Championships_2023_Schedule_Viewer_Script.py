@@ -6,7 +6,7 @@ import pandas as pd
 
 
 
-password = "Para2024!"
+password = "Olympic2024!"
 
 validation = pd.read_excel('Validation.xlsx')
 
@@ -15,24 +15,48 @@ Swimmer_List = validation['Swimmer'].unique()
 Coach_List = validation['Coach'].unique()
 
 
-Event_List = ['F 100 Bk S10',
-              'F 100 Bk S11',
-              'F 100 Bk S12',
-              'F 100 Bk S13',
-              'F 100 Bk S14',
-              'F 100 Bk S2',
-              'F 100 Bk S6',
-              'F 100 Bk S7',
-              'F 100 Bk S8',
-              'F 100 Bk S9',
-              'F 100 Br SB11',
-              'F 100 Br SB12',
-              'F 100 Br SB13',
-              'F 100 Br SB14',
-              'F 100 Br SB4',
-              'F 100 Br SB5',
-              'F 100 Br SB6'
-]
+Event_List = ['50 BCK (M)', 
+              '50 BCK (F)',
+              '50 BRS (M)',
+              '50 BRS (F)',
+              '50 FLY (M)',
+              '50 FLY (F)',
+              '50 FS (M)',
+              '50 FS (F)',
+              '100 BCK (M)',
+              '100 BCK (F)',
+              '100 BRS (M)',
+              '100 BRS (F)',
+              '100 FLY (M)',
+              '100 FLY (F)',
+              '100 FS (M)',
+              '100 FS (F)',
+              '200 BCK (M)',
+              '200 BCK (F)',
+              '200 BRS (M)',
+              '200 BRS (F)',
+              '200 FLY (M)',
+              '200 FLY (F)',
+              '200 FS (M)',
+              '200 FS (F)',
+              '400 FS (M)',
+              '400 FS (F)',
+              '800 FS (M)',
+              '800 FS (F)',
+              '1500 FS (M)',
+              '1500 FS (F)',
+              '200 IM (M)',
+              '200 IM (F)',
+              '400 IM (M)',
+              '400 IM (F)',
+              '4x100 FS (M)',
+              '4x100 FS (F)',
+              '4x100 FS (MX)',
+              '4x100 MED (M)',
+              '4x100 MED (F)',
+              '4x100 MED (MX)',
+              '4x200 FS (M)',
+              '4x200 FS (F)']
 
 
 
@@ -84,7 +108,7 @@ def Access_Denied():
 
     with main_overview:
         st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-        st.title("World Para-Swimming Championships 2023 Schedule Viewer")
+        st.title("World Championships Schedule Viewer")
         st.subheader("App access not currently granted.....Please enter password in sidebar to proceeed to App")
 
 
@@ -95,7 +119,7 @@ def Swimmer_View():
 
     #Dataset manipulation
 
-    swimmer_dataset = pd.read_excel('Para RAW Timetable.xlsx')
+    swimmer_dataset = pd.read_excel('RAW Timetable.xlsx')
 
     Swimmer_List = validation['Swimmer'].unique()
 
@@ -373,7 +397,7 @@ def Coach_View():
 
     #Dataset manipulation
 
-    coach_dataset = pd.read_excel('Para RAW Timetable.xlsx')
+    coach_dataset = pd.read_excel('RAW Timetable.xlsx')
 
     Coach_List = validation['Swimmer'].unique()
 
@@ -415,7 +439,7 @@ def Coach_View():
     coach_metres_covered = coach_dataset_filter['Distance'].sum()
 
 
-    coach_dataset_2 = pd.read_excel('Para RAW Timetable.xlsx')
+    coach_dataset_2 = pd.read_excel('RAW Timetable.xlsx')
     coach_dataset_2['Event Start'] = coach_dataset_2['Event Start'].apply(str).str[0:5]
 
     validation_2 = pd.read_excel('Validation.xlsx')
@@ -439,7 +463,7 @@ def Coach_View():
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
             st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-            st.title("British Swimming World Para-Swimming Championships 2023 Schedule Viewer")
+            st.title("British Swimming World Championships Schedule Viewer")
             st.subheader("Event Timetable by Coach:")
     
         with col_2:
@@ -603,7 +627,7 @@ def Hypothetical_View():
 
     Event_Selection = pd.DataFrame({'Event Select': Event_Select})
 
-    event_dataset = pd.read_excel('Para RAW Timetable.xlsx')
+    event_dataset = pd.read_excel('RAW Timetable.xlsx')
 
     event_dataset = pd.merge(event_dataset, Event_Selection, left_on='Event', right_on='Event Select', how='left')
 
@@ -716,7 +740,7 @@ def Hypothetical_View():
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
             st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-            st.title("British Swimming World Para Swimming Championships 2023 Schedule Viewer")
+            st.title("British Swimming World Championships Schedule Viewer")
             st.subheader("Exploratory Event Timetable:")
     
         with col_2:
