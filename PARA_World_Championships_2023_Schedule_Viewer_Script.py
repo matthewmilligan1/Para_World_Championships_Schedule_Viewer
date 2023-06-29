@@ -6,7 +6,7 @@ import pandas as pd
 
 
 
-password = "Olympic2024!"
+password = "Para2024!"
 
 validation = pd.read_excel('Validation.xlsx')
 
@@ -119,7 +119,7 @@ def Swimmer_View():
 
     #Dataset manipulation
 
-    swimmer_dataset = pd.read_excel('RAW Timetable.xlsx')
+    swimmer_dataset = pd.read_excel('Para RAW Timetable.xlsx')
 
     Swimmer_List = validation['Swimmer'].unique()
 
