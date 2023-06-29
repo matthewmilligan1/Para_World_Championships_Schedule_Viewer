@@ -6,7 +6,7 @@ import pandas as pd
 
 
 
-password = "Olympic2024!"
+password = "Para2024!"
 
 validation = pd.read_excel('Validation.xlsx')
 
