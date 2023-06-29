@@ -108,7 +108,7 @@ def Access_Denied():
 
     with main_overview:
         st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-        st.title("World Championships Schedule Viewer")
+        st.title("World Para-Swimming Championships 2023 Schedule Viewer")
         st.subheader("App access not currently granted.....Please enter password in sidebar to proceeed to App")
 
 
@@ -397,7 +397,7 @@ def Coach_View():
 
     #Dataset manipulation
 
-    coach_dataset = pd.read_excel('RAW Timetable.xlsx')
+    coach_dataset = pd.read_excel('Para RAW Timetable.xlsx')
 
     Coach_List = validation['Swimmer'].unique()
 
@@ -439,7 +439,7 @@ def Coach_View():
     coach_metres_covered = coach_dataset_filter['Distance'].sum()
 
 
-    coach_dataset_2 = pd.read_excel('RAW Timetable.xlsx')
+    coach_dataset_2 = pd.read_excel('Para RAW Timetable.xlsx')
     coach_dataset_2['Event Start'] = coach_dataset_2['Event Start'].apply(str).str[0:5]
 
     validation_2 = pd.read_excel('Validation.xlsx')
@@ -463,7 +463,7 @@ def Coach_View():
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
             st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-            st.title("British Swimming World Championships Schedule Viewer")
+            st.title("British Swimming World Para-Swimming Championships 2023 Schedule Viewer")
             st.subheader("Event Timetable by Coach:")
     
         with col_2:
@@ -627,7 +627,7 @@ def Hypothetical_View():
 
     Event_Selection = pd.DataFrame({'Event Select': Event_Select})
 
-    event_dataset = pd.read_excel('RAW Timetable.xlsx')
+    event_dataset = pd.read_excel('Para RAW Timetable.xlsx')
 
     event_dataset = pd.merge(event_dataset, Event_Selection, left_on='Event', right_on='Event Select', how='left')
 
@@ -740,7 +740,7 @@ def Hypothetical_View():
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
             st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-            st.title("British Swimming World Championships Schedule Viewer")
+            st.title("British Swimming World Para Swimming Championships 2023 Schedule Viewer")
             st.subheader("Exploratory Event Timetable:")
     
         with col_2:
