@@ -356,7 +356,7 @@ def Access_Denied():
     main_overview = st.container()
 
     with main_overview:
-        st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-TEwkmc-VVwMkS6TVsxpaYcFRPJ4-9yjsKNIkddP_XnHMxVFUp2bRJ8_idjQDcnVdw&usqp=CAU')
+        st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-TEwkmc-VVwMkS6TVsxpaYcFRPJ4-9yjsKNIkddP_XnHMxVFUp2bRJ8_idjQDcnVdw&usqp=CAU.png')
         st.title("World Para-Swimming Championships 2023 Schedule Viewer")
         st.subheader("App access not currently granted.....Please enter password in sidebar to proceeed to App")
 
@@ -711,7 +711,7 @@ def Coach_View():
     with main_overview:
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
-            st.image('https://www.britishswimming.org/media/images/Para-Swimming_Website_Header-01.2e16d0ba.fill-1600x900.png')
+            st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-TEwkmc-VVwMkS6TVsxpaYcFRPJ4-9yjsKNIkddP_XnHMxVFUp2bRJ8_idjQDcnVdw&usqp=CAU.png')
             st.title("World Para-Swimming Championships 2023 Schedule Viewer")
             st.subheader("Event Timetable by Coach:")
     
@@ -988,7 +988,7 @@ def Hypothetical_View():
     with main_overview:
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
-            st.image('https://www.britishswimming.org/media/images/Para-Swimming_Website_Header-01.2e16d0ba.fill-1600x900.png')
+            st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-TEwkmc-VVwMkS6TVsxpaYcFRPJ4-9yjsKNIkddP_XnHMxVFUp2bRJ8_idjQDcnVdw&usqp=CAU.png')
             st.title("World Para-Swimming Championships 2023 Schedule Viewer")
             st.subheader("Exploratory Event Timetable:")
     
