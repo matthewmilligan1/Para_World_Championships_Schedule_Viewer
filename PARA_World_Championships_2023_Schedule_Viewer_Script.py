@@ -356,8 +356,8 @@ def Access_Denied():
     main_overview = st.container()
 
     with main_overview:
-        st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-        st.title("World Championships Schedule Viewer")
+        st.image('https://www.britishswimming.org/media/images/Para-Swimming_Website_Header-01.2e16d0ba.fill-1600x900.png')
+        st.title("World Para-Swimming Championships 2023 Schedule Viewer")
         st.subheader("App access not currently granted.....Please enter password in sidebar to proceeed to App")
 
 
@@ -506,8 +506,8 @@ def Swimmer_View():
     with main_overview:
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
-            st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-            st.title("British Swimming World Championships Schedule Viewer")
+            st.image('https://www.britishswimming.org/media/images/Para-Swimming_Website_Header-01.2e16d0ba.fill-1600x900.png')
+            st.title("World Para-Swimming Championships 2023 Schedule Viewer")
             st.subheader("Event Timetable by Swimmer:")
     
         with col_2:
@@ -528,43 +528,43 @@ def Swimmer_View():
         col_1, col_2, col_3, col_4, col_5, col_6, col_7 = st.columns(7)
 
     with col_1:
-        st.metric("","23/07", "Session 1")
+        st.metric("","31/07", "Session 1")
         session_1_new = session_1[['Event:', 'Time:']]
         session_1_new = session_1_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_1_new.set_index(session_1_new.columns[0]))
                                  
     with col_2:
-        st.metric("", "24/07", "Session 3")
+        st.metric("", "01/08", "Session 3")
         session_3_new = session_3[['Event:', 'Time:']]
         session_3_new = session_3_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_3_new.set_index(session_3_new.columns[0]))
      
     with col_3:
-        st.metric("", "25/07", "Session 5")
+        st.metric("", "02/08", "Session 5")
         session_5_new = session_5[['Event:', 'Time:']]
         session_5_new = session_5_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_5_new.set_index(session_5_new.columns[0]))
 
     with col_4:
-        st.metric("", "26/07", "Session 7")
+        st.metric("", "03/08", "Session 7")
         session_7_new = session_7[['Event:', 'Time:']]
         session_7_new = session_7_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_7_new.set_index(session_7_new.columns[0]))
 
     with col_5:
-        st.metric("", "27/07", "Session 9")
+        st.metric("", "04/08", "Session 9")
         session_9_new = session_9[['Event:', 'Time:']]
         session_9_new = session_9_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_9_new.set_index(session_9_new.columns[0]))
     
     with col_6:
-        st.metric("", "28/07", "Session 11")
+        st.metric("", "05/08", "Session 11")
         session_11_new = session_11[['Event:', 'Time:']]
         session_11_new = session_11_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_11_new.set_index(session_11_new.columns[0]))
 
     with col_7:
-        st.metric("", "29/07", "Session 13")
+        st.metric("", "06/08", "Session 13")
         session_13_new = session_13[['Event:', 'Time:']]
         session_13_new = session_13_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_13_new.set_index(session_13_new.columns[0]))
@@ -711,8 +711,8 @@ def Coach_View():
     with main_overview:
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
-            st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-            st.title("British Swimming World Championships Schedule Viewer")
+            st.image('https://www.britishswimming.org/media/images/Para-Swimming_Website_Header-01.2e16d0ba.fill-1600x900.png')
+            st.title("World Para-Swimming Championships 2023 Schedule Viewer")
             st.subheader("Event Timetable by Coach:")
     
         with col_2:
@@ -734,43 +734,43 @@ def Coach_View():
         col_1, col_2, col_3, col_4, col_5, col_6, col_7 = st.columns(7)
 
     with col_1:
-        st.metric("","23/07", "Session 1")
+        st.metric("","31/07", "Session 1")
         session_1_new = session_1[['Event:', 'Time:']]
         session_1_new = session_1_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_1_new.set_index(session_1_new.columns[0]))
                                  
     with col_2:
-        st.metric("", "24/07", "Session 3")
+        st.metric("", "01/08", "Session 3")
         session_3_new = session_3[['Event:', 'Time:']]
         session_3_new = session_3_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_3_new.set_index(session_3_new.columns[0]))
      
     with col_3:
-        st.metric("", "25/07", "Session 5")
+        st.metric("", "02/08", "Session 5")
         session_5_new = session_5[['Event:', 'Time:']]
         session_5_new = session_5_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_5_new.set_index(session_5_new.columns[0]))
 
     with col_4:
-        st.metric("", "26/07", "Session 7")
+        st.metric("", "03/08", "Session 7")
         session_7_new = session_7[['Event:', 'Time:']]
         session_7_new = session_7_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_7_new.set_index(session_7_new.columns[0]))
 
     with col_5:
-        st.metric("", "27/07", "Session 9")
+        st.metric("", "04/08", "Session 9")
         session_9_new = session_9[['Event:', 'Time:']]
         session_9_new = session_9_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_9_new.set_index(session_9_new.columns[0]))
     
     with col_6:
-        st.metric("", "28/07", "Session 11")
+        st.metric("", "05/08", "Session 11")
         session_11_new = session_11[['Event:', 'Time:']]
         session_11_new = session_11_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_11_new.set_index(session_11_new.columns[0]))
 
     with col_7:
-        st.metric("", "29/07", "Session 13")
+        st.metric("", "06/08", "Session 13")
         session_13_new = session_13[['Event:', 'Time:']]
         session_13_new = session_13_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_13_new.set_index(session_13_new.columns[0]))
@@ -988,8 +988,8 @@ def Hypothetical_View():
     with main_overview:
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
-            st.image('https://www.britishswimming.org/media/images/BritishSwimming-OneTeam-Colour.original.png')
-            st.title("British Swimming World Championships Schedule Viewer")
+            st.image('https://www.britishswimming.org/media/images/Para-Swimming_Website_Header-01.2e16d0ba.fill-1600x900.png')
+            st.title("World Para-Swimming Championships 2023 Schedule Viewer")
             st.subheader("Exploratory Event Timetable:")
     
         with col_2:
@@ -1010,43 +1010,43 @@ def Hypothetical_View():
         col_1, col_2, col_3, col_4, col_5, col_6, col_7 = st.columns(7)
 
     with col_1:
-        st.metric("","23/07", "Session 1")
+        st.metric("","31/07", "Session 1")
         session_1_new = session_1[['Event:', 'Time:']]
         session_1_new = session_1_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_1_new.set_index(session_1_new.columns[0]))
                                  
     with col_2:
-        st.metric("", "24/07", "Session 3")
+        st.metric("", "01/08", "Session 3")
         session_3_new = session_3[['Event:', 'Time:']]
         session_3_new = session_3_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_3_new.set_index(session_3_new.columns[0]))
      
     with col_3:
-        st.metric("", "25/07", "Session 5")
+        st.metric("", "02/08", "Session 5")
         session_5_new = session_5[['Event:', 'Time:']]
         session_5_new = session_5_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_5_new.set_index(session_5_new.columns[0]))
 
     with col_4:
-        st.metric("", "26/07", "Session 7")
+        st.metric("", "03/08", "Session 7")
         session_7_new = session_7[['Event:', 'Time:']]
         session_7_new = session_7_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_7_new.set_index(session_7_new.columns[0]))
 
     with col_5:
-        st.metric("", "27/07", "Session 9")
+        st.metric("", "04/08", "Session 9")
         session_9_new = session_9[['Event:', 'Time:']]
         session_9_new = session_9_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_9_new.set_index(session_9_new.columns[0]))
     
     with col_6:
-        st.metric("", "28/07", "Session 11")
+        st.metric("", "05/08", "Session 11")
         session_11_new = session_11[['Event:', 'Time:']]
         session_11_new = session_11_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_11_new.set_index(session_11_new.columns[0]))
 
     with col_7:
-        st.metric("", "29/07", "Session 13")
+        st.metric("", "06/08", "Session 13")
         session_13_new = session_13[['Event:', 'Time:']]
         session_13_new = session_13_new.rename({'Time:': ''}, axis=1)
         st.dataframe(session_13_new.set_index(session_13_new.columns[0]))
